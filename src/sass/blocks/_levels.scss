@@ -1,0 +1,33 @@
+.levels {
+    padding: 0 0 60px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 265px);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 140px;
+        row-gap: 30px;
+        justify-content: center;
+    align-items: center;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__num {
+        @include round;
+        font-weight: 700;
+        font-size: 36px;
+        color: #FFFFFF;
+        padding-right: 15px;
+        z-index: -1;
+    }
+    &__text {
+        width: 200px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+}
