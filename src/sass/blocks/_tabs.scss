@@ -1,0 +1,82 @@
+.tabs {
+    padding: 42px 0 50px 0;
+    &__mainheader {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    &__content {
+        width: 568px;
+        height: 300px;
+        margin-top: 70px;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+    &__titles {
+        width: 339px;
+        position: relative;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+    &__headers {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    &__header {
+        cursor:pointer;
+        transition:.3s all;
+        &_active {
+            color:#000;
+            font-weight:700;
+        }
+    }
+    &__subheader {
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+    }
+    &__descr {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__img {
+        width: 568px;
+        height: 100px;
+        object-fit: contain;
+    }
+    .divider {
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        width: 200px;
+        height: 0px;
+        border: 1px solid #000000;
+        transform: rotate(90deg);
+    }
+}
+.show {
+    display:block;
+}
+.hide {
+    display:none;
+}
+.fade {
+    animation-name: fade;animation-duration: 1.5s;
+}
+@keyframes fade{from{opacity: 0.1;}to{opacity: 1;}}

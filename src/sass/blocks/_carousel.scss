@@ -1,0 +1,47 @@
+.carousel {
+    position: relative;
+    min-height: 716px;
+    padding: 50px 0 76px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+    }
+    &__inner {
+        padding: 40px 0 40px 0;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 600x;
+        height: 600px;
+    }
+    button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+    }
+    .slick-prev {
+        position: absolute;
+        top: 270px;
+        left: 150px;
+        z-index: 1;
+    }
+    .slick-next {
+        position: absolute;
+        top: 270px;
+        right: 160px;
+    }
+    .slick-slide {
+        outline: none;
+    }
+    #btn {
+        display: block;
+        margin: 0 auto;
+        background-color:#45C5ED;
+        &:hover {
+            background-color: rgb(90, 168, 233);
+            transition: 0.3s;
+        }
+    }
+}

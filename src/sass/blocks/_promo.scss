@@ -1,0 +1,36 @@
+.promo {
+    min-height: 123px;
+    &__contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__part {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        margin: 10px;
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 700;
+        span {
+            font-weight: 400;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            &:hover {
+                color: $main-color;
+                transition: 0.3s;
+
+            }
+        }   
+    }
+}

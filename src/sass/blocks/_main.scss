@@ -1,0 +1,20 @@
+.main {
+    min-height: 510px;
+    padding: 82px 0;
+    background: url('../../img/main_bg.jpg') center center/cover no-repeat;
+    &__title {
+        font-weight: 700;
+        font-size: 52px;
+        color: #ffff;
+        line-height: 61px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        color: #ffff;
+        margin-top: 23px;
+    }
+    &__btn {
+        margin-top: 50px;
+    }
+}
