@@ -36,10 +36,12 @@ $(document).ready(function(){
     $(function(){
         $("a[href^='#']").click(function(){
                 var _href = $(this).attr("href");
-                const menu = document.querySelector('.menu');
+                const menu = document.querySelector('.menu'),
+                     hamburger = document.querySelector('.hamburger_active');
                 $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
                 if (menu.classList.contains('menu_active')) {
                     menu.classList.toggle('menu_active');
+                    hamburger.classList.toggle('hamburger_active');
                 }
                 return false;
         });
