@@ -36,7 +36,11 @@ $(document).ready(function(){
     $(function(){
         $("a[href^='#']").click(function(){
                 var _href = $(this).attr("href");
+                const menu = document.querySelector('.menu');
                 $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                if (menu.classList.contains('menu_active')) {
+                    menu.classList.toggle('menu_active');
+                }
                 return false;
         });
     });
@@ -46,9 +50,11 @@ $(document).ready(function(){
 
     $('[data-modal=contacts]').on('click', function() {
         $('.overlay, #contacts').fadeIn('slow');
+        document.body.style.overflow = 'hidden';
     });
     $('.modal__close').on('click', function() {
         $('.overlay, #contacts, #thanks').fadeOut('slow');
+        document.body.style.overflow = '';
     });
 
     // tabs

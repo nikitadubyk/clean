@@ -379,6 +379,9 @@
         }
     }
     .tabs {
+        &__content {
+            min-height: 320px;
+        }
         &__mainheader {
             font-size: 24px;
         }
